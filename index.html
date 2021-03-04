@@ -5,21 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <title>Document</title>
 </head>
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
         <a-text>hello</a-text>
-        <!-- <a-assets>
+        <a-assets>
             <a-asset-item id="home-obj" src="asset3d/cottage_obj.obj"></a-asset-item>
             <a-asset-item id="home-mtl" src="asset3d/cottage_obj.mtl"></a-asset-item>
-        </a-asset> -->
+        </a-asset>
 
         
         <a-marker preset="hiro">
-            <!-- <a-entity obj-model="obj: ##home-obj; mtl: ##home-mtl"></a-entity> -->
+            <!-- <a-entity obj-model="obj: #home-obj; mtl: #home-mtl"></a-entity> -->
             <a-box color="#ff0000" position='0 0 0' material='opacity: 0.5;'></a-box>
         </a-marker>
         <a-entity camera>
